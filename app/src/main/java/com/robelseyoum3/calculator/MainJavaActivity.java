@@ -23,6 +23,7 @@ public class MainJavaActivity extends AppCompatActivity {
         final EditText etNumberOne = findViewById(R.id.et_number_one);
         final EditText etNumberTwo = findViewById(R.id.et_number_two);
 
+        //Adding two numbers
         Button btnAdd = findViewById(R.id.btn_add);
         final TextView tvResult = findViewById(R.id.tv_result);
 
@@ -49,6 +50,69 @@ public class MainJavaActivity extends AppCompatActivity {
 
             }
         });
+
+        //Division two numbers
+        Button btnSub = findViewById(R.id.btn_sub);
+        btnSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String numOne = etNumberOne.getText().toString();
+                String numTwo = etNumberTwo.getText().toString();
+
+                int a = Integer.parseInt(numOne);
+                int b = Integer.parseInt(numTwo);
+
+                int result = a - b;
+                tvResult.setText(Integer.toString(result));
+
+            }
+        });
+
+        //Multiplying two numbers
+        Button btnMult = findViewById(R.id.btn_mult);
+        btnMult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                String numOne = etNumberOne.getText().toString();
+                String numTwo = etNumberTwo.getText().toString();
+
+                int a = Integer.parseInt(numOne);
+                int b = Integer.parseInt(numTwo);
+
+                int result = a * b;
+                tvResult.setText(Integer.toString(result));
+
+            }
+        });
+
+        //Division of two numbers
+
+        Button btnDiv = findViewById(R.id.btn_div);
+        btnDiv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String numOne = etNumberOne.getText().toString();
+                String numTwo = etNumberTwo.getText().toString();
+                String divZero = "";
+
+                int a = Integer.parseInt(numOne);
+                int b = Integer.parseInt(numTwo);
+
+                if (b == 0)
+                {
+                    divZero = "Please don't divide a number by zero";
+                    tvResult.setText(divZero);
+                }
+                else{
+                    int result = a / b;
+                    tvResult.setText(Integer.toString(result));
+
+                }
+
+            }
+        });
+
 
     }
 

@@ -96,13 +96,58 @@
             android:layout_marginTop="@dimen/home_margin_top"
     />
 
-    <Button
+    <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:weightSum="100"
             android:layout_marginTop="@dimen/home_margin_top"
-            android:id="@+id/btn_add"
-            android:text="Add"
-    />
+            android:layout_gravity="center_horizontal"
+    >
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_margin_top"
+                android:id="@+id/btn_add"
+                android:text="Add"
+                android:layout_weight="25"
+
+
+        />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_margin_top"
+                android:id="@+id/btn_sub"
+                android:text="Sub"
+                android:layout_weight="25"
+
+        />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_margin_top"
+                android:id="@+id/btn_mult"
+                android:text="Multiplication"
+                android:layout_weight="25"
+
+        />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/home_margin_top"
+                android:id="@+id/btn_div"
+                android:text="Div"
+                android:layout_weight="25"
+        />
+
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>

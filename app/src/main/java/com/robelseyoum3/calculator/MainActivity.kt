@@ -13,16 +13,6 @@ class MainActivity : AppCompatActivity() {
         btn_save.setOnClickListener {
             tv_user_name.text = "Hello " + et_name.text.toString()
         }
-//
-//        String numOne = etNumberOne.getText().toString();
-//        String numTwo = etNumberTwo.getText().toString();
-//
-//        int a = Integer.parseInt(numOne);
-//        int b = Integer.parseInt(numTwo);
-//
-//        int result = a + b;
-//        tvResult.setText(Integer.toString(result));
-
 
 
         btn_add.setOnClickListener {
