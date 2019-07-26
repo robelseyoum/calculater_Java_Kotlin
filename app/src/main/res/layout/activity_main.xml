@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+       <!--
+       Equal distribution
+
+        To create a linear layout in which each child uses
+        the same amount of space on the screen,
+        set the android:layout_height of each view to "0dp" (for a vertical layout) or
+        the android:layout_width of each view to "0dp" (for a horizontal layout).
+        Then set the android:layout_weight of each view to "1".
+
+        -->
+
+
+
+        <TextView
+                android:layout_width="20dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_user_name"
+                android:text="@string/label_name"
+                android:textColor="@color/labelColor"
+                android:textSize="40sp"
+        />
+
+        <TextView
+                android:layout_width="80dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_user_name2"
+                android:text="@string/dev_name"
+                android:textColor="@color/nameColor"
+                android:textSize="40sp"
+        />
+
+
+</LinearLayout>
+
